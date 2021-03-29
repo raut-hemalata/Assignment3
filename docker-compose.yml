@@ -4,12 +4,6 @@ x-env-files:      &env-files
   env_file:
     - .env
 
-x-logging:        &logging
-  driver:         "json-file"
-  options:
-    max-size:     "100m"
-    max-file:     "5"
-
 volumes:
   cluster_data_vol:
 
